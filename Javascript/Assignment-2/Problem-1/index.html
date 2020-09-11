@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Changer</title>
+</head>
+
+<body>
+    <div>
+        <img id="pic" src="./hero1.jpg" alt="" srcset="">
+    </div>
+    <center>
+        <button onClick=first() id="first-btn">First</button>
+        <button onClick=second() id="second-btn">Second</button>
+        <button onClick=third() id="third-btn">Third</button>
+    </center>
+
+</body>
+
+<script>
+    function first() {
+        var img = document.getElementById("pic")
+        img.src = "hero1.jpg";
+        document.getElementById("pic").appendChild(img);
+    }
+    function second() {
+        var img = document.getElementById("pic")
+        img.src = "hero2.png";
+        document.getElementById("pic").appendChild(img);
+    }
+    function third() {
+        var img = document.getElementById("pic")
+        img.src = "hero3.jpg";
+        document.getElementById("pic").appendChild(img);
+    }
+</script>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy-Text</title>
+</head>
+
+<body>
+    <input id="textOne" type="text">
+    <input id="textTwo" type="text">
+    <button onClick=change() type="submit">Change</button>
+</body>
+<!--Script-->
+<script>
+    function change() {
+        var textOne = document.getElementById("textOne").value;
+        var textTwo = document.getElementById("textTwo");
+        document.getElementById("textTwo").value = textOne;
+    }
+</script>
+
+</html>
