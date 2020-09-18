@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+
+<body>
+    <h2> Employee Data </h2>
+    <div>
+        <input type="text" value="" />
+        <button>Search</button>
+    </div><br />
+    <div>
+        <td>
+            <tr>Name</tr>
+            <tr>Age</tr>
+            <tr>City</tr>
+            <tr>Salary</tr>
+        </td><br />
+        <td>
+            <tr id="name">hi</tr>
+            <tr id="age"></tr>
+            <tr id="city"></tr>
+            <tr id="salary"></tr>
+            <button>Delete</button>
+        </td>
+
+    </div>
+    <script>
+        const emp = [
+            {
+                name: 'ajay',
+                age: 32,
+                city: 'coimbatore',
+                salary: 20000
+            },
+            {
+                name: 'biji',
+                age: 35,
+                city: 'chennai',
+                salary: 25000
+            },
+            {
+                name: 'ciji',
+                age: 28,
+                city: 'eroad',
+                salary: 28000
+            },
+            {
+                name: 'divya',
+                age: 32,
+                city: 'selam',
+                salary: 21000
+            },
+            {
+                name: 'harish',
+                age: 38,
+                city: 'madurai',
+                salary: 21000
+            },
+        ];
+
+        var name = document.getElementById("name");
+        var age = document.getElementById("age");
+        var city = document.getElementById("city");
+        var salary = document.getElementById("salary");
+
+        document.getElementById("name").innerHTML = emp;
+
+        // for (i = 0; i <= emp.length - 1; i++) {
+        //     console.log(emp[i].name)
+        //     var name = emp[i].name;
+        //     // document.getElementById("name").innerHTML = JSON.stringify(name);
+        // }
+
+    </script>
+</body>
+
+</html>
